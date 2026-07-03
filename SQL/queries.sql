@@ -1,32 +1,31 @@
 USE LittleLemonDB;
 
-SELECT * FROM Customers;
-SELECT * FROM Staff;
-SELECT * FROM MenuItems;
-SELECT * FROM Menus;
-SELECT * FROM Orders;
-SELECT * FROM Bookings;
-
 CALL GetMaxQuantity();
 
 CALL AddBooking(
-    6,
-    2,
-    '2024-06-20',
-    4
+99,
+99,
+99,
+'2022-12-10'
 );
 
 CALL UpdateBooking(
-    6,
-    '2024-06-22'
-);
-
-CALL ManageBooking(
-    '2024-06-23',
-    2,
-    3
+99,
+'2022-01-10'
 );
 
 CALL CancelBooking(
-    6
+99
+);
+
+CALL ManageBooking(
+'2022-12-20',
+5,
+1
+);
+
+CALL ManageBooking(
+'2022-10-10',
+5,
+2
 );
